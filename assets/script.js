@@ -1,3 +1,51 @@
+
+var timeDisplayEl = $('#currentDay');
+var textareaEl = $('textarea');
+
+
+$(function() {
+
+function displayTime() {
+  var rightNow = dayjs().format('dddd, MMMM D');
+  timeDisplayEl.text(rightNow);
+}
+displayTime();
+
+function changeColor() {
+  // select all textareas, compare id of textarea to current hour  and add class based on comparison
+
+  // gets current hour
+  var currentHour = dayjs().hour()
+  
+  textareaEl.each(function() {
+    var scheduledTime = parseInt($(this).attr('id')); 
+
+    if (scheduledTime === currentHour) {
+      $(this).addClass('present');
+    }
+    else if (scheduledTime < currentHour) {
+      $(this).addClass('past');
+    } else {
+      $(this).addClass('future');
+    }
+  })
+}
+
+changeColor();
+
+() {
+
+}
+
+
+
+
+})
+
+
+
+
+
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
