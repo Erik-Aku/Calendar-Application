@@ -14,7 +14,8 @@ Web application to schedule events and plan your 9-5 work day. This App is power
 
 ## Installation
 
-The project is deployed to GitHub Pages:
+The project is deployed to GitHub Pages: https://erik-aku.github.io/Calendar-Application/
+
 
 ![Final](https://github.com/Erik-Aku/Calendar-Application/assets/92487526/57b7a2ac-155b-4d02-bbef-65fa1f80dd5d)
 
